@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8″ />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body> 
+    <form action="formulario.html">
+        <h1>texto</h1>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo" size="58" maxlength="10" autofocus>
+
+        <h2>Radio</h2>
+        <legend>Selecciona un genero:</legend>
+        <input type="radio" name="genero" value="hombre" id="hombre" checked> <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" value="mujer"> Mujer
+        <input type="radio" name="genero" value="otro"> Otro
+
+        <h3>Select</h3>
+        <label>Frutas:</label>
+        <select name="frutas">
+            <option value="fresa">Fresa</option>
+            <option value="naranja">Naranja</option>
+            <option value="uva">Uva</option>
+        </select>
+
+        <h4>Textarea</h4>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="escribe aquí"></textarea>
+
+        <h5>Datelist</h5>
+        <label>Buscador:</label>
+        <input list="buscador">
+        <datalist id="buscador">
+            <option value="Internet explorer"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+        </datalist>
+
+        <h5>Checkbox</h5>
+        <input type="checkbox" name="azul" value="azul"> Azul
+        <input type="checkbox"> Verde
+        
+        <button></button>
+
+
+    </form>
+     
+
+     
+
+     
+</body>
+</html>
