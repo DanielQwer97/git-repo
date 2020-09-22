@@ -6,23 +6,29 @@
     <title>Formulario</title>
 </head>
 <body> 
-    <form action="formulario.html">
+    <form action="formulario.html" autocomplete="on">
         <h1>texto</h1>
         <label for="nombre">Nombre</label>
         <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo" size="58" maxlength="10" autofocus>
 
         <h2>Radio</h2>
+        <fieldset>
         <legend>Selecciona un genero:</legend>
         <input type="radio" name="genero" value="hombre" id="hombre" checked> <label for="hombre">Hombre</label>
         <input type="radio" name="genero" value="mujer"> Mujer
         <input type="radio" name="genero" value="otro"> Otro
+        </fieldset>
 
         <h3>Select</h3>
-        <label>Frutas:</label>
-        <select name="frutas">
+        <label for="frutas">Frutas:</label>
+        <select name="frutas" id="frutas">
+            <optgroup label="favoritas">
             <option value="fresa">Fresa</option>
             <option value="naranja">Naranja</option>
+            </optgroup>
+            <optgroup label="otras">
             <option value="uva">Uva</option>
+            </optgroup>
         </select>
 
         <h4>Textarea</h4>
@@ -40,8 +46,51 @@
         <h5>Checkbox</h5>
         <input type="checkbox" name="azul" value="azul"> Azul
         <input type="checkbox"> Verde
+
+
+        <h5>Password</h5>
+        <input type="password" name="pass" id="pass" required>
+
+        <h5>Color</h5>
+        <input type="color">
+
+        <h5>Fecha</h5>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" min="2000-10-22">
+
+        <h5>Time</h5>
+        <input type="time">
+
+        <h5>Week</h5>
+        <input type="week">
+
+        <h5>Email</h5>
+        <input type="email" autocomplete>
         
-        <button>enviar</button>
+        <h5>Range</h5>
+        <input type="range" min="0" max="50" step="10">
+
+        <h5>Number</h5>
+        <input type="number" min="1" max="25" step="3">
+
+        <h5>Search</h5>
+        <input type="search">
+
+        <h5>URL</h5>
+        <input type="url">
+
+        <h5>Archivos</h5>
+        <input type="file" multiple>
+
+        <h5>Telefono</h5>
+        <input type="tel" pattern="" maxlength="10">
+
+        <br>
+        <br>
+        <br>
+        <input type="submit" name="" id="">
+        <input type="image" src="">
+        <button>Enviar boton</button>
 
 
     </form>
