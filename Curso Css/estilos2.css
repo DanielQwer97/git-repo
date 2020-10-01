@@ -58,8 +58,12 @@ span{
 
 .caja1{
     background: lightgreen;
-    padding: 10px;
-    margin-top: 50px;
-    border: 2px solid black;
     box-sizing: border-box;
+   /* margin: 10px, 20px; Y - X*/
+    padding: 0 30px 0 0;
+    border-width: 3px 10px 20px 4px;
+    border-style: solid dotted;
+    border-color: red yellow;
+
+
 }
