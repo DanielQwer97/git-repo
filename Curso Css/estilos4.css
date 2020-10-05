@@ -32,3 +32,122 @@ Ejemplos:
     background: red;
     color:white;
 }
+
+/*::before y ::after
+La propiedad de content es obligatoria
+Son elementos de línea por defecto y son hijos del elemento
+al que pertenecen.
+*/
+
+.dinero::before{
+    content: '$';
+    color: red;
+}
+
+.dinero::after{
+    content: '.00';
+    color:red;
+}
+
+.ejemplo::before, .ejemplo::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: black;
+    display: inline-block;
+}
+
+/*Pseudoclases
+Dinamicas:
+          :link - link no visitado
+          :visited - link visitado
+          :active - link al momento del click
+          :hover
+          :focus
+
+Estado:
+       :enabled
+       :disabled
+       :checked
+       :required
+       :valid
+       :invalid
+       :option
+       :in-range
+       :out-of-range
+*/
+
+.enlace:link{
+    color:green;
+}
+
+.enlace:visited{
+    color:white;
+}
+
+.enlace:active{
+    transform: scale(.8);
+}
+
+.enlace{
+    display: inline-block;
+    padding: 5px;
+    background: red;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.enlace:hover{
+    background: black;
+}
+
+.input, .label{
+    display: block;
+}
+
+.input:enabled{
+    background: royalblue;
+}
+
+.input:disabled{
+    background: red;
+}
+
+.input:required{
+    background: yellow;
+}
+
+.input:checked + label{
+    font-size: 30px;
+}
+
+.input:in-range{
+    background: green;
+}
+
+.input:out-of-range{
+    background: red;
+}
+
+/*
+Child -
+    :first-child - no importa que el elemento sea del mismo tipo
+    :last-child - seleciona el ultimo elemento
+
+    :nth-child(n)/(odd) para seleccionar elementos impares, (even) para seleccionar elementos pares
+    :nth-last-child(n) - selecciona el elemento contando desde el ultimo
+    :only-child - un unico hijo
+*/
+
+.parrafo:nth-child(odd){
+    background: lightcoral;
+}
+
+.parrafo:nth-child(even){
+    background: red;
+}
+
+.parrafo:nth-last-child(3){
+    background: blueviolet;
+}
