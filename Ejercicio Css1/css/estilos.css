@@ -1,0 +1,74 @@
+body{
+    margin: 0 auto;
+    font-size: 16px; /*1en*/
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    background: #cfe7e7;
+    position: relative;
+}
+
+header nav{
+    background: #0070c5;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 99%;
+}
+
+header nav ul{
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+    color:#ffffff;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+header nav form{
+    float: right;
+    margin: 15px 20px 0 0;
+}
+
+.logo{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+header nav ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.buscador{
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+}
+
+.boton-buscar{
+    background: green;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid green;
+    padding: 5px 15px 5px;
+}
+
+.section1{
+    padding: 5px 0 0 5px;
+    border-radius: 5px;
+    background: silver;
+}
+.section1 article img{
+     height: 350px;
+     width: 1015px;
+}
+
+.section2 article{
+
+}
+
