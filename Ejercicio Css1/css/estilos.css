@@ -47,7 +47,8 @@ header nav ul li:hover{
 
 .buscador{
     border-radius: 5px;
-    padding: 5px 15px 5px 15px;
+    height: 30px;
+    padding-left: 20px;
 }
 
 .boton-buscar{
@@ -55,20 +56,72 @@ header nav ul li:hover{
     border-radius: 5px;
     color: white;
     border: 1px solid green;
-    padding: 5px 15px 5px;
+    height: 30px;
 }
 
 .section1{
-    padding: 5px 0 0 5px;
-    border-radius: 5px;
-    background: silver;
+    margin-top: 10px;
+}
+.section1 article{
+    text-align: center;
 }
 .section1 article img{
-     height: 350px;
-     width: 1015px;
+    border: 5px solid silver;
+    width: 98%;
 }
-
+.section2{
+    margin-top: 10px;
+} 
 .section2 article{
-
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
 }
+
+.section2 h1{
+    font-size: 60px;
+    margin: 10px auto 0;
+}
+
+.section2 h2{
+    font-size: 40px;
+    margin: 5px auto 0;
+}
+
+.ver-mas{
+    color: blue;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 30%;
+    padding: 5px 10px;
+}
+
+.section2 video{
+    width: 98%;
+    height: 250px;
+    padding: 10px;
+}
+
+footer{
+    background: rgb(5, 5, 77);
+    color: #ffffff;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer section{
+    font-size: 40px;
+    display: inline-block;
+    font-weight: 600;
+    width: 32%;
+    height: 90%;
+    background: rgb(34, 34, 175);
+    vertical-align: middle;
+    border-radius: 5px;
+    padding: 15px 0 0 10px;
+}
+
+
+
 
