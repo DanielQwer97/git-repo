@@ -1,0 +1,57 @@
+/*
+Degradados
+2 colores 0% 100%
+3 colores 0% 50% 100%
+
+Background-image: valores para degradados
+
+Tipo: lineal y radial
+
+Líneas: 
+Background-image: linear-gradient([direction], color1, color2);
+direction: to right, left, top, bottom, top right, top left, bottom left, bottom right.
+
+Background-image: radial-gradient([shape], color1, color2);
+direction: at top, right, left, bottom, center.
+*/
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border-radius: 2px solid black;
+    /*background-image: linear-gradient(red 10%, blue 20% 70%, yellow 70%);*/
+    background-image: radial-gradient(ellipse 200px 50px at bottom, transparent 50%, blue 50%);
+}
+
+/*Box shadow
+
+box-shadow: h-offset v-offset blur spread color inset|outset
+h-offset: Desplazamiento horizontal
+v-offset: Desplazamientio vertical
+blur: Opcional - La cantidad de desenfoque de la sombra
+spread: Opcional - Es la extension de la sombra
+color: Opcional - Color del texto por default
+inset|outset: Opcional - La sombra este por dentro o por fuera.
+-Sombras multiples
+
+*/
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 20px;
+    box-shadow: 10px 10px 1px 0 red, -10px -10px 30px 0 blue inset;
+}
+
+/*
+Text-shadow: h-offset v-offset blur color
+-Sombras multiples
+*/
+
+.titulo{
+    font-weight: 900;
+    font-size: 30px;
+    color:white;
+    text-shadow: -1px -1px 1px red, 1px 1px 2px blue;
+}
