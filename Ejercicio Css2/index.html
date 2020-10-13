@@ -8,13 +8,17 @@
     </head>
     <body>
          <header>
+             <div class="titulo-logo">
              <img src="img2/logo.jpg" alt="logo" id="logo">
              <h1 class="titulo">MI THEMA EN HTML5</h1>
-
+            </div>
+             <div class="redes">
              <img src="img2/red1.png">
              <img src="img2/red2.png">
              <img src="img2/red3.png">
-             <nav>
+            </div>
+
+             <nav class="barra">
                 <ul>
                     <li>INICIO</li>
                     <li>TUTORIALES</li>
@@ -38,7 +42,7 @@
                  <div>
                      <span class="autor-post">
 
-                         El
+                         Por
                          <span class="italica-post"> Admin </span>
                          El
                          <span class="italica-post"> 30/05/2012. </span>
@@ -51,25 +55,35 @@
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque esse officia facere, 
                          blanditiis enim eaque adipisci quis pariatur cum eum non ex libero ea sint dolore mollitia, 
                          earum, rerum numquam.
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ab quia aliquid iure, rem reiciendis neque minima sapiente quos? Commodi repudiandae odio dolorem saepe quo quasi error.
                      </p>
                     <input type="submit" value="Leer Mas..">                   
                  </div>
              </article>
          </section>
 
-         <aside>
-             <section>
-                 <article>
-                    <h2>Publicidad</h2>
-                    <img src="img2/publicidad.jpg" alt="publicidad">
-                </article>
-                <article>
-                    <h2>Buscador</h2>
-                    <input type="search" value="Search.." class="buscador">
-                    <button class="boton">GO</button>
-                </article>
-                <article>
-                    <h2>Categorias</h2>
+         <aside class="aside">
+                <div class="publicidad-aside">          
+                    <div class="barra">Publicidad</div>
+                    <div class="imagenes-publicidad">
+                        <img src="img2/publicidad.jpg" alt="publicidad">
+                        <img src="img2/publicidad.jpg" alt="publicidad">
+                        <img src="img2/publicidad.jpg" alt="publicidad">
+                        <img src="img2/publicidad.jpg" alt="publicidad">
+                    </div>
+                    
+                </div>
+
+                <div class="buscador-aside">
+                    <div class="barra">Buscador</div>
+                    <form action="#">
+                    <input type="search" placeholder="Search.." class="buscador">
+                    <input type="submit" value="GO" class="boton">
+                    </form>
+                </div>
+
+                <div class="categorias-aside">
+                    <div class="barra">Categorias</div>
                     <ul>
                         <li>categoria 1</li>
                         <li>categoria 2</li>
@@ -79,9 +93,7 @@
                         <li>categoria 6</li>
                         <li>categoria 7</li>                   
                      </ul>
-                </article>       
-             </section>
-            
+                </div>          
          </aside>
     </body>
 </html>
