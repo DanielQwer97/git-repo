@@ -133,7 +133,7 @@ Estado:
 /*
 Child -
     :first-child - no importa que el elemento sea del mismo tipo
-    :last-child - seleciona el ultimo elemento
+    :last-child - selecciona el ultimo elemento
 
     :nth-child(n)/(odd) para seleccionar elementos impares, (even) para seleccionar elementos pares
     :nth-last-child(n) - selecciona el elemento contando desde el ultimo
