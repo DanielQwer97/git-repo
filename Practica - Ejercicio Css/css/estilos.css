@@ -1,0 +1,126 @@
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+header nav ul{
+    box-shadow: 0 -2px 0 0 black inset, -2px -2px 0 0 white;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 700;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 15px;
+    box-shadow: -1px -1px 0  0 white, 2px 0 1px 0 black;
+    font-size: 20px;
+}
+.lista:first-child{
+    padding-left: 230px;
+}
+.lista:last-child{
+    box-shadow: 1px 1px 1px 0 white;
+    padding-left: 20px;
+}
+
+#logo{
+    width: 120px;
+}
+
+.section1{
+    position: relative;
+}
+
+.section1 div{
+    position: absolute;
+    top:0;
+    right:700px;
+    left:0;
+    bottom:0;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+
+.img-nube{
+    margin-left: 580px;
+    margin-top: 50px;
+    width: 725px;
+    background-color: white;
+}
+.section1{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.section1 article h1{
+    margin-top: 30px;
+    font-size: 70px;
+    font-weight: 800;
+    color: black;
+    margin: 20px 50px 0 0;
+}
+#subtitulo{
+    font-weight: 800;
+    color: black;
+    margin: 0 50px 0 0;
+    font-size: 50px;
+}
+
+#contenido{
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    text-align: left;
+    font-weight: 550;
+}
+.section1 div{
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 450px;
+    margin-right: 150px;
+}
+
+footer{
+    background: black;
+    padding-bottom: 30px;
+}
+.copyright{
+   display: inline-block;
+   margin: 20px 0 0 150px;
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.derechos{
+    color: gray;
+    font-size: 12px;
+}
+.direccion{
+    color: gray;
+}
+
+.direccion span{
+    color:rgb(66, 65, 65);
+}
+
+.direcciones{
+    display: inline-block;
+    height: 75%;
+    width: 25%;
+    margin-left: 590px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: right;
+    vertical-align: top;
+}
