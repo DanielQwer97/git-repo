@@ -1,0 +1,203 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+header nav {
+ display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    color: rgb(160, 156, 156);
+    margin-left: 20px;
+    border-bottom: 2px solid silver;
+    font-size: 24px;  
+}
+
+aside {
+    display: inline-block;
+    width: 28%;
+    position: absolute;
+    top: 190px;
+    right: 70px;
+}
+
+ .aside-1 h2 {
+    font-size: 52px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.aside-1 ul{
+    padding: 0 15px;
+    font-size: 14px;
+}
+.aside-1 ul li{
+    margin: 10px 0 0 0;
+}
+
+.aside-2 h2{
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0;
+    padding: 10px 0 20px 0;
+}
+
+.aside-3 h2{
+    font-weight: 500;
+    margin: 0;
+    font-size: 26px;
+}
+.aside-3 p{
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#email{
+   height:20px;
+   padding:5px;
+   border-radius: 5px solid #cccccc;
+   box-shadow: 0 5px 10px 0 silver, 0 5px 10px 0 white;
+}
+#enviar{
+   color: white;
+   font-weight: 700;
+   background: rgba(33, 204, 61, 0.74);
+   padding:8px;
+   width:70px;
+   border-radius: 5px;
+}
+
+.seccion1 {
+    display: inline-block;
+    position: relative;
+    width: 65%;
+    padding: 0 10px;
+}
+
+.seccion2 {
+    display: inline-block;
+    width: 65%;
+    padding: 40px 10px;
+    vertical-align: top;
+}
+
+.seccion2 h2 {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.seccion2 p {
+    font-size: 12px;
+}
+
+.seccion2 img {
+    width: 60px; 
+}
+
+.seccion2 a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.seccion2 article {
+    display: inline-block;
+    width: 31%;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.azul {
+    color: #3870bc;
+}
+
+.rosa {
+    color: #ea078d;
+}
+
+.verde {
+    color: #90c60d;
+}
+
+#bgoffer {
+    position: absolute;
+    top: -90px;
+    left: -45px;
+}
+
+#slide {
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+}
+
+#logo {
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 33px;
+}
+
+#pintura {
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    right: 0;
+    height: 200px;
+}
+
+#buscador {
+    float:right;
+    margin: 20px 15px;
+}
+
+footer{
+background: rgb(103, 103, 253);
+position: relative;
+}
+
+footer div{
+    padding:20px 0 10px 20px;
+    width: 32%;
+    display: inline-block;
+}
+
+.footer-1{
+   color: white;
+   font-size: 11px;
+   margin-left: 10px;
+}
+
+.footer-2{
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.footer-3{
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    right: -200px;
+    bottom: 10px;
+}
+
+#boton-footer{
+    background:rgb(103, 103, 253) ;
+    border-radius: 20px;
+    padding:5px;
+    color:white;
+    width: 100px;
+}
