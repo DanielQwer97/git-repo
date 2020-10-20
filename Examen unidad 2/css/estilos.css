@@ -1,0 +1,149 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+header nav{
+ display: inline-block;
+ background:#de4b8a;
+ width:100%;
+ height: 80px;
+}
+
+header nav ul{
+    margin-left:200px;
+}
+
+#titulo{
+    display: inline-block;
+    font-size: 24px;
+    color:#eab87c;
+    margin:120px 0 0 70px;
+    vertical-align: top;
+    font-style: italic;
+}
+
+header nav ul li {
+    display: inline-block;
+    color:white;
+    font-size: 18px;  
+    margin: 0 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.Home{
+    background: white;
+    color:#c0d16c;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+#logo{
+    width: 120px;
+    height: 150px;
+    margin: 50px 150px 10px 50px;
+}
+
+.section1{
+    margin-bottom: 50px;
+}
+
+.art1{
+    position: relative;
+    display: inline-block;
+    width: 48%;
+}
+
+.art2{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin-top: 50px;
+}
+
+.art1 p{
+    color:#adadad;
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    bottom:5px;
+    right:-20px;
+}
+
+.section1 img{
+   width: 400px;
+   border-radius:50%;
+   border:8px solid #e29840;
+   margin: 10px 10px 10px 40px;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    color:#51aae8;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.art2 p{
+     color:#cce6ee;
+     font-size: 16px;
+     text-align: center;
+     margin-bottom: 30px;
+}
+
+.enlace{
+text-decoration: none;
+padding:5px;
+background: #b7cb56;
+color:white;
+border: 5px solid  #b7cb56;
+border-radius: 5px;
+text-align: center;
+margin-left: 185px;
+}
+
+footer{
+    background: #de4b8a;
+}
+
+.footer1{
+     display: inline-block;
+     color: white;
+     margin: 30px 0 40px 30px;
+     font-weight: 700;
+     font-size: 18px;
+}
+
+.copyright{
+     font-weight: 500;
+     font-size: 12px;
+}
+
+.footer2{
+    display: inline-block;
+    margin: 10px 10px 30px 480px;
+}
+
+.footer2 img{
+     margin-top: 10px;
+     width: 35px;
+     margin-right: 20px;
+}
+
+
