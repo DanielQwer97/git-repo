@@ -1,8 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 
 //Inicializar Express
 const app = express();
-
+app.use(cors());
 
 //Configuraciones
 app.set('port', process.env.PORT || 3000);
