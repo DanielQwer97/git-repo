@@ -5,7 +5,11 @@
         bordered
         :items="items"
         :fields="campos"
-    ></b-table>
+    >
+     <template #cell(actions)="data">
+        Hola
+      </template>
+    </b-table>
   </div>
 </template>
 

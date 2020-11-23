@@ -21,8 +21,19 @@ export default {
       campos: [
         { key: 'id', label: 'Clave' },
         { key: 'nombre', label: 'Nombre'},
-        { key: 'direccion', label: 'Dirección'},
-        { key: 'telefono', label: 'Teléfono'}
+        { key: 'direccion', 
+          label: 'Dirección',
+          formatter: value =>{
+              return value || "-"
+          }
+        },
+        { key: 'telefono', 
+          label: 'Teléfono',
+          formatter: value =>{
+              return value || "-"
+          }
+        },
+        { key: 'actions', label: 'Acciones'}
       ]
     }  
   },
