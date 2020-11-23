@@ -42,6 +42,10 @@ function crear (req, res){
             return res.status(400).send({error: true, mensaje: "El nombre es obligatorio"})
         }
 
+        if(persona.telefono && persona.telefono.length !== 10){
+            return res.status(400).send({error: true, mensaje: "La longitud del Teléfono debe ser de 10."})
+        }
+        
         let sql = 'INSERT into personas set ?';
         connection.query(sql, [persona], (err, rows) =>{
             if(err){
