@@ -2,7 +2,20 @@
   <div class="home">
        <h1>Personas</h1>
        <b-button to="/Agregar-Persona" variant="primary" class="float-right mb-3">Agregar</b-button>
-       <Table :campos="campos" :items="allPersonas"></Table>
+       <Table :campos="campos" :items="allPersonas">
+         <template slot="actions" slot-scope="{ item }">
+           <b-button @click="onEditar(item)">
+             Editar
+           </b-button>
+           <b-button 
+           @click="onEliminar(item)" 
+           variant="danger" 
+           class="ml-2"
+           >
+             Eliminar
+           </b-button>
+         </template>
+       </Table>
   </div>
 </template>
 
@@ -41,7 +54,36 @@ export default {
     ...mapGetters(['allPersonas'])
   },
   methods: {
-    ...mapActions(['setPersonas'])
+    ...mapActions(['setPersonas','eliminarPersona']),
+    onEditar(item) {
+      console.log(item);
+      this.$router.push({
+      name:'Editar',
+      params:{
+        id: item.item.id
+      }
+    })
+    },
+    onEliminar(item) {
+      console.log(item)
+      this.eliminarPersona({
+        id: item.item.id,
+        onComplete: (response) => {
+                        console.log(response)
+                        this.$notify({
+                            type: 'success',
+                            title: response.data.mensaje
+                        });
+                        this.setPersonas();
+                    },
+                    onError: (error) => {
+                        this.$notify({
+                            type: 'error',
+                            title: error.response.data.mensaje
+                        });
+                    }
+      })
+    }
   },
   created() {
     this.setPersonas();

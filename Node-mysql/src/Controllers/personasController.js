@@ -28,7 +28,7 @@ function obtenerpersonasindv (req, res){
                 if(persona === undefined || persona.length === 0)
                 mensaje = "Persona no encontrada";
                 
-                res.json({error: false, data: persona, mensaje: mensaje});
+                res.json({error: false, data: persona[0], mensaje: mensaje});
             }
         })
     }
@@ -81,7 +81,7 @@ function editar (req, res){
 function eliminar (req, res){
     if(connection){
         const { id } = req.params;
-        let sql = 'DELETE personas where id = ?';
+        let sql = `DELETE from personas where id =${id}`;
         connection.query(sql, [id], (err, rows) =>{
             if(err){
                 res.json(err);

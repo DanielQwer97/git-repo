@@ -7,7 +7,7 @@
         :fields="campos"
     >
      <template #cell(actions)="data">
-        Hola
+        <slot name="actions" :item="data"></slot>
       </template>
     </b-table>
   </div>
